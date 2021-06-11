@@ -1,0 +1,20 @@
+.heading{
+    color : darkcyan;
+    background-color: antiquewhite;
+}
+ul{
+    color : darksalmon;
+}
+h2{
+    color : darkcyan;
+}
+h3{
+    color :crimson
+}
+p{
+    color : cornflowerblue
+}
+.img-style{
+    height : 250px;
+    width: 350px;
+}
