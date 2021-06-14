@@ -1,4 +1,5 @@
 import React,{Component} from 'react';
+import throttle from 'lodash.throttle';
 
 const HOC = (Component, data) => {
     return class extends React.Component{
@@ -7,6 +8,8 @@ const HOC = (Component, data) => {
             this.state = {
                 count: 0,
             };
+            this.handleClick = this.handleClick.bind(this);
+            this.throttlehandleClick = throttle(this.handleClick , 1000);
         }
         handleClick = () =>{
             this.setState({
@@ -15,7 +18,7 @@ const HOC = (Component, data) => {
         };
         render(){
             return(
-                <Component count ={this.state.count} handleClick = {this.handleClick}/>
+                <Component count ={this.state.count} handleClick = {this.throttlehandleClick}/>
             );
         }
     }
