@@ -1,0 +1,145 @@
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    border: 1px solid #e7e7e7;
+    background-color: #000000;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: #666;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover:not(.active) {
+    background-color: #ddd;
+  }
+  
+  li a.active {
+    color: white;
+    background-color: #FFFFFF;
+  }
+
+  .grid-container {
+    display: grid;
+    grid-gap: 50px;
+    grid-template-columns: auto auto auto;
+    padding: 10px;
+  }
+  
+  .grid-item {
+    background-color: #EEDEDF;
+    border: 1px solid #646464cc;
+    padding: 20px;
+    font-size: 18px;
+    text-align: center;
+  }
+  .search{
+    margin-top: 30px;
+    margin-left : 405px;
+    position: relative;
+    display: flex;
+    min-width: 100px;
+    max-width: 500px;
+  }
+  .searchbox {
+    border: 1px solid grey;
+    border-radius: 5px;
+    height: 25px;
+    width: 90%;
+    margin : auto;
+    padding: 2px 23px 2px 30px;
+    outline: 0;
+    background-color: #f5f5f5;
+  }
+  .searchbox:hover, .searchbox:focus {
+    border: 1.5px solid #2196f3;;
+    background-color: white;
+  }
+  .submit{
+    float : left;
+    width : 10%;
+    padding : 10px;
+    
+    text-decoration-color : black;
+    color : black;
+    font-size: 18px;
+    border: 1px solid rgb(15, 14, 14);
+    border-left: none;
+    cursor: pointer;
+  }
+  .submit:hover{
+    background: rgb(185, 236, 238);
+  }
+  .dropdown1{
+    color: black;
+    margin-top : 30px;
+    text-decoration-color : black;
+  }
+  .dropdown2{
+    color: black;
+    margin-top : 30px;
+    margin-left: 30px;
+    text-decoration-color : black;
+  }
+  .dropdown option{
+    text-decoration-color: #000000;
+  }
+  .Morebutton{
+    width : 10%;
+    padding : 10px;
+    margin-left: 550px;
+    text-decoration-color : black;
+    color : black;
+    font-size: 18px;
+    border: 1px solid rgb(15, 14, 14);
+    border-left: none;
+    cursor: pointer;
+  }
+  .Morebutton:hover{
+    background: rgb(87, 238, 243);
+  }
+  .order{
+    width : 150px;
+    color : black;
+    
+    margin-left: 30px;
+  }
+  .loader {
+    border: 16px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 16px solid #3498db;
+    width: 100px;
+    height: 100px;
+    margin : auto;
+    -webkit-animation: spin 2s linear infinite; /* Safari */
+    animation: spin 2s linear infinite;
+  }
+  
+  /* Safari */
+  @-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  .unordered{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    border: 1px solid #e7e7e7;
+    background-color: white;
+  }
+  
